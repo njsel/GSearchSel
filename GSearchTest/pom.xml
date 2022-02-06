@@ -3,6 +3,56 @@
   <groupId>org.selenium</groupId>
   <artifactId>GSearchTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <name>Neeta</name>  
+<url>http://maven.apache.org</url>
+  
+  
+<properties>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>   </properties>
+  
+  <build>
+  
+  
+   <plugins>
+   <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+                    
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.selenium.GSearchTest.GSearchHomePage</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+   
+   <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.18.1</version>
+        <configuration>
+          <forkCount>0</forkCount>
+        
+        </configuration>
+      </plugin>
+   
+ 
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <mainClass>GSearchHomePage </mainClass>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+                
+     </plugins>
+     </build>
  <dependencies>
   <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
 <dependency>
@@ -16,7 +66,13 @@
 
 <!-- https://mvnrepository.com/artifact/jdk.tools/jdk.tools -->
 
-
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>rest-assured-all</artifactId>
+<version>4.2.0</version>
+<scope>test</scope>
+</dependency>
   
   </dependencies>
+   
 </project>

@@ -18,7 +18,7 @@ public class GSearchHomePage {
 		System.out.println("Test run2");
 		System.out.println("Test run3");
 		System.out.println("Test run5");
-		System.out.println("Test run6);
+		System.out.println("Test run6");
 		System.out.println("Test run7");
 		
 		System.out.println("Test run8");
